@@ -216,7 +216,7 @@ func (k Keeper) setNodeByOwner(ctx sdk.Context, nodeID string, owner sdk.AccAddr
 	store.Set(key, types.PlaceHolder)
 }
 
-// getNodesStoreByOwner returns the store for the nodes owned by the specified owner
+// getNodeByOwnerPrefixStore returns the store for the nodes owned by the specified owner
 func (k Keeper) getNodeByOwnerPrefixStore(ctx sdk.Context, owner sdk.AccAddress) prefix.Store {
 	store := ctx.KVStore(k.storeKey)
 	key := types.NodeByOwnerPrefixStoreKey(owner)

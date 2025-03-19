@@ -109,7 +109,7 @@ func (suite *MsgTestSuite) TestMsgCreateCaptainNodeValidateBasic() {
 	}
 }
 
-// TestMsgUpdateNodeInfoValidateBasic tests MsgUpdateNodeInfo ValidateBasic
+// TestMsgClaimComputingPowerValidateBasic tests MsgUpdateNodeInfo ValidateBasic
 func (suite *MsgTestSuite) TestMsgClaimComputingPowerValidateBasic() {
 	testCases := []struct {
 		name      string

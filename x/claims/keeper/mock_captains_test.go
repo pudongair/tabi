@@ -304,7 +304,7 @@ func (mock *MockCaptains) GetCurrentEpoch(ctx sdk.Context) uint64 {
 	}
 }
 
-// CalAndGetNodeHistoricalEmissionOnEpoch returns the historical mission of the node at the end of epoch.
+// CalcNodeCumulativeEmissionByEpoch returns the historical mission of the node at the end of epoch.
 func (mock *MockCaptains) CalcNodeCumulativeEmissionByEpoch(ctx sdk.Context, epochID uint64, nodeID string) sdk.Dec {
 	switch mock.caseNum {
 	case KeyCase02:
